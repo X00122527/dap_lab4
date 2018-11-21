@@ -43,7 +43,7 @@ d <- fetch(resultsHandle, n=numRows)
 library(RSQLite)
 conSQLite <- dbConnect(RSQLite::SQLite(), dbname="C:\\student\\athletes.sqlite")
 resultsHandle <- dbSendQuery(conSQLite, "select Ht from athletes_table;")
-numRows <- 20
+#numRows <- 20
 #a <- fetch(resultsHandle, n=numRows)
 #mean(a$Ht) # important
 
